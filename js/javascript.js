@@ -11,16 +11,24 @@ const totalPrice =(numberKm * price)
 
  if (userAge < 18) {
     console.log (  totalPrice - totalPrice * 20 / 100);
+    document.getElementById ('price').innerHTML = ( ' ' + totalPrice - totalPrice * 20 / 100)
  }
- else if(userAge > 65){
+ else if(userAge >= 65){
     console.log (  totalPrice - totalPrice * 40 / 100);
+    document.getElementById ('price').innerHTML = ( ' ' + totalPrice - totalPrice * 40 / 100)
  }
  
  else {
     console.log(totalPrice)
+    document.getElementById ('price').innerHTML = ( ' ' + totalPrice)
  }
 
- document.getElementById ('price').innerHTML = ( ' ' + totalPrice)
+
+
+
+
+
+
     
 
 
