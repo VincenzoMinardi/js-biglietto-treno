@@ -1,16 +1,36 @@
 const numberKm = parseInt(prompt('Salve, Quanti km deve percorrere?'));
 console.log(numberKm);
 
-const ageUse = parseInt(prompt("Perfetto! Mi dica la sua età"));
-console.log(ageUse);
+const userAge = parseInt(prompt("Perfetto! Mi dica la sua età"));
+console.log(userAge);
 
 const price =(0.21);
 console.log(price * numberKm);
 
-if(ageUser < 18) {
-    console.log(price * numberKm * 20 / 100);
-}
-else(ageUse > 18) {
-    console.log(price * numberKm );
-}
+const totalPrice =(numberKm * price)
+
+ if (userAge < 18) {
+    console.log (  totalPrice - totalPrice * 20 / 100);
+ }
+ else if(userAge > 65){
+    console.log (  totalPrice - totalPrice * 40 / 100);
+ }
+ 
+ else {
+    console.log(totalPrice)
+ }
+
+ document.getElementById ('price').innerHTML = ( ' ' + totalPrice)
+    
+
+
+  
+
+   
+
+
+
+ 
+
+
 
